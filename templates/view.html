@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-2">
+    <ul class="nav nav-pills nav-stacked">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="#!createPost">Add Posts</a></li>
+    </ul>
+  </div>
+  <div class="col-md-10">
+    <div ng-controller="viewCtrl">
+      <h4>VIEW POST</h4>
+      <fieldset ng-repeat="posts in posts">
+        <h4>{{ posts.title }}</h4>
+        <p>{{ posts.description }}</p>
+        <p>published on : {{ posts.published_on }}</p>
+      </fieldset>
+      <a href="#" class="btn btn-primary">BACK</a>
+    </div>
+  </div>
+</div>

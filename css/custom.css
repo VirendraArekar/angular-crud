@@ -1,0 +1,31 @@
+.mylogo
+{
+  height: 70px;
+  width: auto;
+}
+
+.myHeader
+{
+  color: white;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.navbar
+{
+  height: 100px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+ 
+}
+
+footer p {
+  margin-top: 30px;
+  color: white;
+  font-size: 24px;
+}

@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-md-2">
+    <ul class="nav nav-pills nav-stacked">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="#!createPost">Add Posts</a></li>
+    </ul>
+  </div>
+  <div class="col-md-10">
+    <div ng-controller="postsCtrl">
+      <table class="table table-striped table-hover ">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Created</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="post in posts.info">
+            <td>{{ post.title }}</td>
+            <td>{{ post.description }}</td>
+            <td style="width:200px;">{{ post.published_on }}</td>
+            <td style="width:110px;">
+               <a ng-href="#!post/{{post.id}}" class="label label-primary">VIEW</a>
+               <a ng-href="#!delete/{{post.id}}" class="label label-danger">DELETE</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

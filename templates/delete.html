@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-2">
+    <ul class="nav nav-pills nav-stacked">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="#!createPost">Add Posts</a></li>
+    </ul>
+  </div>
+  <div class="col-md-10">
+    <div ng-controller="deleteCtrl">
+      <form class="form-horizontal">
+        <fieldset ng-repeat="delete in delete.msg">
+          <h3>{{ delete }}</h3>
+          <a href="#/" class="btn btn-primary">BACK</a>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
